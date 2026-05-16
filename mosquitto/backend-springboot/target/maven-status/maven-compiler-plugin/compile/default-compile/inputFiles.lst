@@ -1,0 +1,17 @@
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/FleetMonitoringApplication.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/config/RabbitMQConfig.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/constant/QueueNames.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/controller/MonitoringController.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/dto/FuelAlertMessage.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/dto/GpsTelemetryMessage.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/dto/NotificationMessage.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/dto/TemperatureAlertMessage.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/exception/MessageProcessingException.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/listener/FuelLevelConsumer.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/listener/NotificationConsumer.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/listener/RouteConsumer.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/listener/TemperatureAlertConsumer.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/service/AlertService.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/service/MetricsService.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/service/NotificationService.java
+/home/justin/Desktop/Programas/APE6_distribuidos/backend-springboot/src/main/java/ec/unl/flota/service/RouteService.java

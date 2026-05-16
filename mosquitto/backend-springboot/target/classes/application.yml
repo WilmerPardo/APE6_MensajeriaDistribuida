@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: flota-monitoring-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+app:
+  queues:
+    gps: cola.gps.telemetria
+    temperature-alerts: cola.alertas.temperatura
+    fuel-alerts: cola.combustible.nivel
+    notifications: cola.notificaciones
