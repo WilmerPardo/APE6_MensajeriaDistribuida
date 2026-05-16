@@ -11,9 +11,11 @@ public class RouteService {
     private static final Logger logger = LoggerFactory.getLogger(RouteService.class);
 
     private final MetricsService metricsService;
+    private final FleetStateService fleetStateService;
 
-    public RouteService(MetricsService metricsService) {
+    public RouteService(MetricsService metricsService, FleetStateService fleetStateService) {
         this.metricsService = metricsService;
+        this.fleetStateService = fleetStateService;
     }
 
     /**
@@ -22,6 +24,7 @@ public class RouteService {
      */
     public void processGpsTelemetry(GpsTelemetryMessage message) {
         metricsService.incrementGpsMessages();
+        fleetStateService.processGpsTelemetry(message);
 
         logger.info(
                 "GPS recibido | vehículo={} | lat={} | lng={} | velocidad={} km/h",

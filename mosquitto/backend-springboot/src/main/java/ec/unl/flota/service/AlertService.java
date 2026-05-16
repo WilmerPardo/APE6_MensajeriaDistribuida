@@ -16,10 +16,14 @@ public class AlertService {
 
     private final RabbitTemplate rabbitTemplate;
     private final MetricsService metricsService;
+    private final FleetStateService fleetStateService;
 
-    public AlertService(RabbitTemplate rabbitTemplate, MetricsService metricsService) {
+    public AlertService(RabbitTemplate rabbitTemplate,
+                        MetricsService metricsService,
+                        FleetStateService fleetStateService) {
         this.rabbitTemplate  = rabbitTemplate;
         this.metricsService  = metricsService;
+        this.fleetStateService = fleetStateService;
     }
 
     /**
@@ -27,6 +31,7 @@ public class AlertService {
      */
     public void processTemperatureAlert(TemperatureAlertMessage message) {
         metricsService.incrementTemperatureAlerts();
+        fleetStateService.processTemperatureAlert(message);
 
         logger.warn(
                 "Alerta de temperatura | vehículo={} | temperatura={} {}",
@@ -51,6 +56,7 @@ public class AlertService {
      */
     public void processFuelAlert(FuelAlertMessage message) {
         metricsService.incrementFuelAlerts();
+        fleetStateService.processFuelAlert(message);
 
         logger.warn(
                 "Alerta de combustible | vehículo={} | nivel={} {}",

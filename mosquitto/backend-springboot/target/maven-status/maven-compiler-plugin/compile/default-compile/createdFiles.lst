@@ -1,0 +1,9 @@
+ec/unl/flota/service/FleetStateService.class
+ec/unl/flota/dto/FleetStatusResponse.class
+ec/unl/flota/entity/GpsTelemetry.class
+ec/unl/flota/repository/GpsTelemetryRepository.class
+ec/unl/flota/entity/AlertEvent.class
+ec/unl/flota/repository/VehicleStateRepository.class
+ec/unl/flota/repository/AlertEventRepository.class
+ec/unl/flota/entity/VehicleState.class
+ec/unl/flota/controller/FleetController.class
